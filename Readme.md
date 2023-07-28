@@ -15,6 +15,15 @@ site and a service file where the keywords for the tests are implemented, that
 are in the `resources`folder. The test cases are in `tests`folder on
 file `tests.robot`.
 
+## Run the test locally
+In practice it is easiest to install Robot Framework and SeleniumLibrary along with its dependencies using pip package manager. Once you have pip installed, all you need to do is running this command:
+
+`$ pip install -r requirements.txt`
+
+To execute the test:
+
+`$ python -m robot tests/tests.robot`
+
 ## Run the test using Docker
 To build the docker image for testing:
 
@@ -23,6 +32,12 @@ To build the docker image for testing:
 To execute the tests:
 
 `$ docker compose up --abort-on-container-exit`
+
+Note that if you get an error like this: (which is related to docker itself)
+
+`error getting credentials - err: exec: "docker-credential-desktop": executable file not found in $PATH, out: '' `
+
+One solution is that in ~/.docker/config.json change credsStore to credStore.
 
 ### Read results
 Once tests are executed for the first time and `output` folder should be
