@@ -1,0 +1,10 @@
+.env*
+.idea/
+venv/
+__pycache__/
+log.html
+output.xml
+output/
+report.html
+selenium-screenshot*.png
+*.DS_Store

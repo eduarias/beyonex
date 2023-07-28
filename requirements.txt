@@ -1,0 +1,6 @@
+robotframework==6.1
+robotframework-seleniumlibrary==6.0.0
+selenium==4.9.1
+Faker~=19.2.0
+webdrivermanager==0.10.0
+python-dotenv==1.0.0
