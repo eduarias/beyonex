@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation     QA technical task for Beyonex.
+Documentation     QA technical task for Beyonnex.
 Library           SeleniumLibrary
 Variables        ../resources/variables.py
 Library          ../resources/Service.py

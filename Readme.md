@@ -1,4 +1,4 @@
-# QA Technical Task for Beyonex
+# QA Technical Task for Beyonnex
 
 ## Implementation details
 The test cases are implemented using Robot Framework with Selenium. They can
