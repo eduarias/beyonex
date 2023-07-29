@@ -16,13 +16,20 @@ are in the `resources`folder. The test cases are in `tests`folder on
 file `tests.robot`.
 
 ## Run the test locally
-In practice it is easiest to install Robot Framework and SeleniumLibrary along with its dependencies using pip package manager. Once you have pip installed, all you need to do is running this command:
+In practice, it is easiest to install Robot Framework and SeleniumLibrary along 
+with its dependencies using pip package manager. Once you have pip installed,
+all you need to do is running this command:
 
 `$ pip install -r requirements.txt`
 
 To execute the test:
 
 `$ python -m robot tests/tests.robot`
+or
+`$ robot tests`
+
+In order to do this you should also need to have chromedriver installed on
+the machine. (https://chromedriver.chromium.org/downloads)
 
 ## Run the test using Docker
 To build the docker image for testing:
@@ -44,7 +51,7 @@ Once tests are executed for the first time and `output` folder should be
 created where report and log can be found. 
 
 The report (`output/report.html`) just have information about the test execution results, one 
-should skipped due to the temperature selector and the other one should 
+should be skipped due to the temperature selector and the other one should 
 pass or fail.
 
 The log (`output/log.html`) contains a detailed log of each step of the test

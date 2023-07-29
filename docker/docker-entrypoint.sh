@@ -10,7 +10,6 @@ while ! curl -sSL "http://${GRID}:4444/wd/hub/status" 2>&1 | jq -r '.value.ready
   echo 'Waiting for the Grid'
   sleep 1
 done
-echo "Try robot"
 echo "Selenium Grid is up - executing tests"
 
 robot --outputdir /test/output test/tests || exit_code=$?
