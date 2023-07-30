@@ -32,6 +32,9 @@ In order to do this you should also need to have chromedriver installed on
 the machine. (https://chromedriver.chromium.org/downloads)
 
 ## Run the test using Docker
+Right now by default, running tests will be successful for macbooks with ARM-based chips (M1 or M2). If you use macbooks with intel chips or use any other hardware, 
+please first modify the docker-compose.yml file.
+
 To build the docker image for testing:
 
 `$ docker compose build`
