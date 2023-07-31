@@ -1,10 +1,7 @@
 version: '3'
 services:
   chrome:
-    # For mac ARM-based chips(M1 or M2) we need to use image: seleniarm/standalone-chromium
     image: seleniarm/standalone-chromium:114.0
-    # For other platforms use:
-    # image: selenium/standalone-chrome:114.0
     environment:
       - SE_NODE_SESSION_TIMEOUT=1800
     healthcheck:
